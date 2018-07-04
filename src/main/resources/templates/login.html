@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title>Memorizing Word</title>
+    <style>
+        .loginLabel {
+            width: 50%;
+            margin: 10px auto auto;
+            text-align: center;
+        }
+
+        .loginLabel label {
+            width: 90%;
+            margin: auto;
+        }
+
+        .loginSubmit {
+            width: 20%;
+            margin: 10px auto auto;
+            text-align: center;
+        }
+        input {
+            background: #555555;
+            color: #eeeeee;
+            font-size: 100%;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+<form th:action="@{/login}" method="post">
+    <div class="loginLabel"><label> User Name: <input type="text" name="username"/> </label></div>
+    <div class="loginLabel"><label> Password: <input type="password" name="password"/> </label></div>
+    <div class="loginLabel" th:if="${param.error}">
+        Invalid username and password.
+    </div>
+    <div class="loginSubmit"><input type="submit" value="Sign In"/></div>
+</form>
+
+</body>
+</html>

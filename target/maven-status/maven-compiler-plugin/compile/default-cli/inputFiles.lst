@@ -1,0 +1,17 @@
+/home/zya/workspace/bs-memorize-word/word-life/src/main/java/wordlife/WebSocketConfiguration.java
+/home/zya/workspace/bs-memorize-word/word-life/src/main/java/wordlife/entity/VocableSet.java
+/home/zya/workspace/bs-memorize-word/word-life/src/main/java/wordlife/EventHandler.java
+/home/zya/workspace/bs-memorize-word/word-life/src/main/java/wordlife/SecurityConfiguration.java
+/home/zya/workspace/bs-memorize-word/word-life/src/main/java/wordlife/HomeController.java
+/home/zya/workspace/bs-memorize-word/word-life/src/main/java/wordlife/controller/UserActivateController.java
+/home/zya/workspace/bs-memorize-word/word-life/src/main/java/wordlife/controller/LoginController.java
+/home/zya/workspace/bs-memorize-word/word-life/src/main/java/wordlife/SpringDataRestEventHandler.java
+/home/zya/workspace/bs-memorize-word/word-life/src/main/java/wordlife/SpringDataJpaUserDetailsService.java
+/home/zya/workspace/bs-memorize-word/word-life/src/main/java/wordlife/repository/UserRepository.java
+/home/zya/workspace/bs-memorize-word/word-life/src/main/java/wordlife/entity/Vocable.java
+/home/zya/workspace/bs-memorize-word/word-life/src/main/java/wordlife/repository/VocableRepository.java
+/home/zya/workspace/bs-memorize-word/word-life/src/main/java/wordlife/entity/User.java
+/home/zya/workspace/bs-memorize-word/word-life/src/main/java/wordlife/controller/RegisterController.java
+/home/zya/workspace/bs-memorize-word/word-life/src/main/java/wordlife/DatabaseLoader.java
+/home/zya/workspace/bs-memorize-word/word-life/src/main/java/wordlife/ReactAndSpringDataRestApplication.java
+/home/zya/workspace/bs-memorize-word/word-life/src/main/java/wordlife/exception/DuplicateNameException.java

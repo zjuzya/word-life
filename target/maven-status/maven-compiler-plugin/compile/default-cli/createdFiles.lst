@@ -1,0 +1,5 @@
+wordlife/entity/VocableSet.class
+wordlife/repository/UserRepository.class
+wordlife/repository/VocableRepository.class
+wordlife/entity/User.class
+wordlife/entity/Vocable.class

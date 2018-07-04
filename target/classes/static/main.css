@@ -1,0 +1,120 @@
+table {
+    margin: 20px auto auto;
+    border-collapse: collapse;
+    background: #333741;
+    color: #bbbbbb;
+    border-radius: 15px;
+}
+
+td, th {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+button, input {
+    background: #555555;
+    color: #eeeeee;
+    font-size: 100%;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 20px auto auto;
+}
+
+.memorizePage {
+    margin: 10% auto auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.memorizePageBig {
+    font-size: 300%;
+}
+
+.memorizePage button{
+    margin: 10px 10px 10px;
+    text-align: center;
+    width:  auto;
+}
+
+.loginBanner {
+    background: #333333;
+    overflow: hidden;
+}
+
+.loginBanner ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+}
+
+.loginBanner li {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    background-color: #333333;
+}
+
+.loginBannerRight ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+.loginBannerRight li {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.loginBanner li:hover {
+    background-color: #111111;
+}
+
+.loginBannerRight li:hover {
+    background-color: #111111;
+}
+
+.loginBanner form{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+}
+
+.loginBanner input{
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    background: #333333;
+    border: none;
+}
+
+.loginBanner input:hover {
+    background: #111111;
+}
+
+.learningCondition {
+    margin: 5%;
+}
+
+.choosingSet {
+    margin: 5% auto auto;
+    text-align: center;
+}
+
+.userWordList {
+    text-align: center;
+}

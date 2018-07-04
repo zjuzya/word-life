@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Register Page</title>
+    <style>
+        form {
+            width: 50%;
+            margin: 10px auto auto;
+            text-align: center;
+        }
+
+        .textLabel {
+            width: 50%;
+            text-align: left;
+            margin-left: 0;
+        }
+
+        .textAlert {
+            margin-right: 0;
+            text-align: left;
+            width: 40%;
+        }
+
+        input {
+            background: #555555;
+            color: #eeeeee;
+            font-size: 100%;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+<form action="/register" method="post">
+    <table>
+        <tr>
+            <td class="textLabel"> User Name:<br/><input type="text" name="username" id="rg-name"
+                                                         onblur="checkName(this)"/></td>
+            <td class="textAlert"><span id="name_span"> Should have length between 6 and 20(both included). </span>
+                <span th:if="${param.dupNameError}" style="color:red"> This name has been used.</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="textLabel"> Password:<br/><input type="password" name="password" id="rg-ps"
+                                                        onblur="checkPassword(this)"/></td>
+            <td class="textAlert"><span id="pswd_span"> should have length between 6 and 20(both included). </span></td>
+        </tr>
+        <tr>
+            <td class="textLabel"> Check Password:<br/><input type="password" name="ck-password" id="rg-ps2"
+                                                              onblur="checkPassword2()"/></td>
+            <td class="textLabel"><span id="pswd2_span"> should be same with password. </span></td>
+        </tr>
+        <tr>
+            <td class="textLabel"> Email:<br/><input type="email" name="email" id="rg-email"/></td>
+            <td class="textLabel">
+                <span id="email_span"
+                      onblur="checkEmail(this)"> should have right email format. Like XXX@gmail.com</span>
+                <span th:if="${param.dupEmailError}" style="color:red">  This email has been used.</span>
+            </td>
+        </tr>
+    </table>
+    <div><input type="submit" value="Register"/></div>
+</form>
+</body>
+<script>
+    var nameRegex = /^\w{6,20}$/;
+    var passwordRegex = /^\w{6,20}$/;
+    var emailRegex = /\S+@\S+\.\S+/;
+
+    function checkName(node) {
+        var name = node.value;
+        if (!nameRegex.test(name)) {
+            document.getElementById('name_span').style.color = "red";
+        }
+        else {
+            document.getElementById('name_span').style.color = "green";
+        }
+    }
+
+    function checkPassword(node) {
+        var pswd = node.value;
+        if (!passwordRegex.test(pswd)) {
+            document.getElementById('pswd_span').style.color = "red";
+        }
+        else {
+            document.getElementById('pswd_span').style.color = "green";
+        }
+    }
+
+    function checkPassword2() {
+        var p1 = document.getElementById('rg-ps').value;
+        var p2 = document.getElementById('rg-ps2').value;
+        if (p1 !== p2) {
+            document.getElementById('pswd2_span').style.color = "red";
+        }
+        else {
+            document.getElementById('pswd2_span').style.color = "green";
+        }
+    }
+
+    function checkEmail(node) {
+        var email = node.value;
+        if (!emailRegex.test(email)) {
+            document.getElementById('email_span').style.color = "red";
+        }
+        else {
+            document.getElementById('email_span').style.color = "green";
+        }
+    }
+</script>
+</html>

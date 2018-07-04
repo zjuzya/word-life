@@ -1,0 +1,14 @@
+wordlife\controller\LoginController.class
+wordlife\entity\User$UserState.class
+wordlife\util\VocableUtil.class
+wordlife\controller\WordController.class
+wordlife\controller\UserActivateController.class
+wordlife\controller\IndexController.class
+wordlife\exception\DuplicateEmailException.class
+wordlife\repository\VocableSetRepository.class
+wordlife\DatabaseLoader.class
+wordlife\util\UserUtil.class
+wordlife\HomeController.class
+wordlife\controller\RegisterController.class
+wordlife\exception\DuplicateNameException.class
+wordlife\ReactAndSpringDataRestApplication.class
