@@ -1,5 +1,7 @@
 Spring + thymeleaf + React  
-尚未部署网页。
+
+10.180.30.190:8080
+
 已存在用户  
 zya password:zya  
 zya2 password: zya2
